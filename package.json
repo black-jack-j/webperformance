@@ -2,10 +2,15 @@
   "name": "webperformance",
   "version": "1.0.0",
   "description": "performance optimizations tests",
-  "main": "index.js",
   "scripts": {
-    "test": "echo 'test'"
+    "test": "editorconfig-checker",
+    "build": "mkdir -p dist && cp ./src/* ./dist ",
+    "deploy": "cd dist && rsync --arhcive --compress --delete . black-jack-j@blog.black-jack.dev:/var/www/blog.black-jack.dev/html/"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "editorconfig-checker": "^4.0.2",
+    "html-minifier": "^4.0.0"
+  }
 }
