@@ -4,7 +4,7 @@
   "description": "performance optimizations tests",
   "scripts": {
     "test": "editorconfig-checker",
-    "build": "mkdir -p dist && cp ./src/* ./dist ",
+    "build": "mkdir -p dist && cp -r ./src/* ./dist ",
     "deploy": "cd dist && rsync --arhcive --compress --delete . black-jack-j@blog.black-jack.dev:/var/www/blog.black-jack.dev/html/"
   },
   "author": "",
