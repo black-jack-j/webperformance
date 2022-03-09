@@ -8,6 +8,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: blog.black-jack.dev
     strategy:
       matrix:
         node-version: [16.x]
