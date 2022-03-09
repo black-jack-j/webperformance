@@ -1,0 +1,11 @@
+{
+  "name": "webperformance",
+  "version": "1.0.0",
+  "description": "performance optimizations tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'test'"
+  },
+  "author": "",
+  "license": "ISC"
+}
