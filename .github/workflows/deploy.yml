@@ -26,4 +26,4 @@ jobs:
       - run: npm ci
       - run: npm run build
       # Deploy
-      - run: cd dist && rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . black-jack-j@blog.black-jack.dev:/var/www/blog.black-jack.dev/
+      - run: cd dist && rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" -r --archive --compress --delete . black-jack-j@blog.black-jack.dev:/var/www/blog.black-jack.dev/
